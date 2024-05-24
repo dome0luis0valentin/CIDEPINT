@@ -33,6 +33,7 @@ Posicionado en la carpeta admin
 -  poetry shell (enterno virtual)
 -  poetry install (instalar las dependencias)
 -  flask createdb (crea la base de datos)
+-  flask seedsdb (llena la BBDD)
 -  flask run –debug (modo desarrollador)
 
 Posicionado en la carpeta portal 
