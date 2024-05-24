@@ -29,7 +29,7 @@ Para la instalación y ejecución de nuestro proyecto en modo desarrollador debe
 Posicionado en la carpeta admin 
 -  poetry shell (enterno virtual)
 -  poetry install (instalar las dependencias)
--  fkask run –debug (modo desarrollador)
+-  flask run –debug (modo desarrollador)
 
 Posicionado en la carpeta portal 
 - npm install (instalar las dependencias)

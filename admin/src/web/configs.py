@@ -18,8 +18,10 @@ class Config(object):
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
     # Configuración de Google para autenticación
-    GOOGLE_CLIENT_ID = os.getenv('193229960820-ruljkn9bnh3rjftm5b0a0q9840rrtp9v.apps.googleusercontent.com')
-    GOOGLE_CLIENT_SECRET = os.getenv('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')
+    GOOGLE_CLIENT_SECRET = os.getenv('CLIENT_SECRET')
+    GOOGLE_CLIENT_ID = os.getenv('CLIENT_ID')
+    # GOOGLE_CLIENT_ID = os.getenv('193229960820-ruljkn9bnh3rjftm5b0a0q9840rrtp9v.apps.googleusercontent.com')
+    # GOOGLE_CLIENT_SECRET = os.getenv('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')
 
 
 class ProductionConfig(Config):

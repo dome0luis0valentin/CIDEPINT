@@ -24,6 +24,10 @@ from authlib.integrations.flask_client import OAuth
 from src.core.config.database import db
 from flask import current_app
 
+import os
+from dotnet import load_dotenv
+load_dotenv()
+
 # Código para generar un token de confirmación
 def generate_confirmation_token():
     token = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(32))
@@ -160,8 +164,10 @@ oauth = OAuth(app)
 oauth.register(
     name='google',
     redirect_uri='https://admin-grupo24.proyecto2023.linti.unlp.edu.ar/auth/callback',
-    client_secret='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',
-    client_id = '193229960820-ruljkn9bnh3rjftm5b0a0q9840rrtp9v.apps.googleusercontent.com',
+    client_secret = os.getenv('CLIENT_SECRET')
+    client_id = os.getenv('CLIENT_ID')
+    # client_secret='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',
+    # client_id = '193229960820-ruljkn9bnh3rjftm5b0a0q9840rrtp9v.apps.googleusercontent.com',
     server_metadata_url=CONF_URL,
     client_kwargs={
         'scope': 'openid email profile'
