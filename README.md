@@ -21,14 +21,18 @@ Puedes seguir las instrucciones en los siguientes enlaces para su instalación:
 - [Flask ^2.3.3](https://flask.palletsprojects.com)
 - [NodeJs](https://nodejs.org/en)
 - [Vuejs3](https://vuejs.org/)
+- Postgres (En nuestro caso utilizamos un contenedor en Docker https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/)
 
 ### ⚙️ Uso
 
 Para la instalación y ejecución de nuestro proyecto en modo desarrollador debes ejecutar los siguentes comandos:
 
 Posicionado en la carpeta admin 
+-  pip install poetry
+-  pyenv install python3.8.10
 -  poetry shell (enterno virtual)
 -  poetry install (instalar las dependencias)
+-  flask createdb (crea la base de datos)
 -  flask run –debug (modo desarrollador)
 
 Posicionado en la carpeta portal 
